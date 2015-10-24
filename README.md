@@ -11,7 +11,7 @@ python main.py <image1> <image2> <mask>
 ## Running on Example Images
 ```
 python main.py examples/apple.jpg examples/orange.jpg examples/mask.jpg
-```g
+```
 
 ## Results!
 ###Apple
