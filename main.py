@@ -6,6 +6,7 @@ import scipy
 import cv2
 from align_image_code import align_images
 from PIL import Image
+import sys
 
 # Matlab's rgb2gray by Stackoverflow: http://stackoverflow.com/questions/12201577/how-can-i-convert-an-rgb-image-into-grayscale-in-python
 def rgb2gray(rgb):
@@ -145,4 +146,4 @@ def blend(im1_name, im2_name, mask_name):
 # unmask_filter('campanile.jpg', 5)
 # hybrid('sony.jpg', 'ankit.jpg', 10, 5)
 # stacks('lincoln.jpg', 5)
-blend("white.jpg", "black.jpg", "mask1.jpg")
+blend(sys.argv[1], sys.argv[2], sys.argv[3])
